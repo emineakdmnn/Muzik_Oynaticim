@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/anaRelativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AkilliOynaticiActivity">
+
+    <RelativeLayout
+        android:id="@+id/yukari"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logoo"></ImageView>
+
+        <TextView
+            android:id="@+id/sarkiAdi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="14dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_500"
+            android:textSize="24sp"></TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/asagi"
+        android:layout_below="@id/yukari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <ImageView
+            android:src="@drawable/geri"
+            android:id="@+id/onceki_sarki_btn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="25dp">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/oynat_durdur_btn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="25dp"
+            android:layout_toEndOf="@id/onceki_sarki_btn"
+            android:src="@drawable/pause">
+
+        </ImageView>
+
+        <ImageView
+            android:src="@drawable/ileri"
+            android:id="@+id/sonraki_sarki_btn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="25dp"
+            android:layout_toEndOf="@id/oynat_durdur_btn">
+
+        </ImageView>
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/sesli_komut_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/purple_700"
+        android:text="SESLİ KOMUT MODU-ON"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="22sp">
+
+    </Button>
+
+
+
+
+</RelativeLayout>
