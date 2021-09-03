@@ -1,4 +1,5 @@
 # Müzik Oynatıcım
+# Sesi Metine Dönüştürme
 Telefonumuzdaki tüm müzik dosyalarını çekerek hem sesli komutlarla hemde butonlarla şarkıları yönetip dinleyebileceğimiz bir müzik player uygulaması. Ekrana basılı tutup sesli komutlarla şarkıları yönetebiliriz.
 Sesli Komutlar:
 1) Şarkıyı Durdur
